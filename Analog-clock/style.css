@@ -1,0 +1,35 @@
+body{
+	min-height: 300px;
+}
+.clock{
+    margin: auto;
+    width: 100vw;
+    height:100vw;
+    max-height: 600px;
+    max-width: 600px;
+}
+.container{
+	height: auto;
+    position: absolute;
+}
+
+.hour, .minute, .second {
+    position: absolute;
+    top: 0%;
+    left: calc(50% - 12px);
+	width: 30px;
+	height: 600px;
+	transition: all 1s ease-in-out;
+}
+
+.hour{
+	background:url(hourhand.png);
+}
+
+.minute{
+	background:url(minhand.png);
+}
+
+.second{
+	background:url(sechand.png);
+}
