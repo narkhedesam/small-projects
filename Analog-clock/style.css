@@ -13,25 +13,38 @@ body{
     position: absolute;
 }
 
+img {
+    width: 100vw;
+    height: 100vw;
+    max-height: 600px;
+    max-width: 600px;
+}
+
 .hour, .minute, .second {
     position: absolute;
-    top: 0%;
+    top: 0;
     left: calc(50% - 12px);
-	width: 30px;
-	height: 600px;
-	transition: all 1s ease-in-out;
+    width: 30px;
+    min-height: 300px;
+    transition: all 1s ease-in-out;
+    text-align: center;
+    background-size: auto 100%;
+    background-repeat: no-repeat;
+    background-position: center;
+    height: 100vw;
+    max-height: 600px;
 }
 
 .hour{
-	background:url(hourhand.png);
+	background-image:url(hourhand.png);
 }
 
 .minute{
-	background:url(minhand.png);
+	background-image:url(minhand.png);
 }
 
 .second{
-	background:url(sechand.png);
+	background-image:url(sechand.png);
 }
 
 h1 {
